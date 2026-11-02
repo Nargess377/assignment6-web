@@ -15,15 +15,21 @@ HTML, CSS, JavaScript, and jQuery.
 - Included jQuery using CDN
 - Used document.ready()
 - Tested the console message
+- <img width="1875" height="616" alt="task0" src="https://github.com/user-attachments/assets/907c882e-aad0-4d00-8a61-f1d8e670a768" />
+
 
 ### Task 1: Selectors and CSS
 - Used tag, ID, and class selectors
 - Changed text dynamically
 - Changed CSS properties
 - Implemented light and dark themes
+- <img width="1920" height="1080" alt="task1" src="https://github.com/user-attachments/assets/b9e44dea-8956-4f7a-8590-917b4a964353" />
+
 
 ### Task 2: Visibility
 - Used hide(), show(), and toggle()
+- 
+<img width="1098" height="579" alt="task2" src="https://github.com/user-attachments/assets/df412984-7fd7-4db2-b26a-3e37c3c928ec" />
 
 ### Task 3: Fade Effects
 - Used fadeIn(), fadeOut(), and fadeToggle()
@@ -44,9 +50,7 @@ HTML, CSS, JavaScript, and jQuery.
 ### Task 8: Animations
 - Used animate() for interactive skill bars
 
-## Screenshots
 
-Add screenshots of each task here before submission.
 
 ## Summary
 I created a responsive personal portfolio and used
