@@ -1,0 +1,231 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narges' Little World</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Task 0: jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">✿ NARGES' WORLD</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Task 1: Selectors and CSS -->
+        <section id="home" class="hero">
+            <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+            <h1 id="greeting">Hello, I'm Narges ♡</h1>
+            <h2>Welcome to My Portfolio</h2>
+            <p class="intro">
+                A Computer Science student who loves languages,
+                traveling, cooking, and discovering new things.
+            </p>
+
+            <div class="button-group">
+                <button id="changeGreeting">Change Greeting</button>
+                <button id="lightMode">☀ Light</button>
+                <button id="darkMode">☾ Dark</button>
+            </div>
+        </section>
+
+        <!-- Task 2: Visibility -->
+        <section id="about" class="card">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+
+            <p>
+                I enjoy learning new languages, exploring cultures,
+                and challenging myself with creative projects.
+            </p>
+
+            <div id="status" class="status">
+                Currently learning jQuery and building my portfolio!
+            </div>
+
+            <div id="funFacts">
+                <p>✈ I love discovering new places.</p>
+                <p>🍳 Cooking is one of my favorite hobbies.</p>
+                <p>📚 I enjoy learning foreign languages.</p>
+            </div>
+
+            <div class="button-group">
+                <button id="hideFacts">Hide</button>
+                <button id="showFacts">Show</button>
+                <button id="toggleFacts">Toggle</button>
+            </div>
+        </section>
+
+        <!-- Task 3: Fade Effects -->
+        <section id="gallery" class="card">
+            <p class="eyebrow">LITTLE MOMENTS</p>
+            <h2>My Gallery</h2>
+
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1018/500/350"
+                     alt="Beautiful landscape">
+                <img src="https://picsum.photos/id/1080/500/350"
+                     alt="Fresh strawberries">
+            </div>
+
+            <div class="button-group">
+                <button id="fadeOut">Fade Out</button>
+                <button id="fadeIn">Fade In</button>
+                <button id="fadeToggle">Fade Toggle</button>
+            </div>
+        </section>
+
+        <!-- Task 4: Slide Effects -->
+        <section class="card">
+            <p class="eyebrow">MY FAVORITES</p>
+            <h2>Things I Love</h2>
+
+            <div class="accordion">
+                <h3 class="slide-title" data-panel="music">
+                    ♫ My Favorite Music
+                </h3>
+                <div id="music" class="slide-panel">
+                    I enjoy classical music and relaxing melodies.
+                </div>
+
+                <h3 class="slide-title" data-panel="movie">
+                    ✧ My Favorite Movies
+                </h3>
+                <div id="movie" class="slide-panel">
+                    I love mystery movies and interesting stories.
+                </div>
+
+                <h3 class="slide-title" data-panel="subject">
+                    ✎ My Favorite Subject
+                </h3>
+                <div id="subject" class="slide-panel">
+                    I enjoy mathematics and learning how technology works.
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="slideUp">Slide Up All</button>
+                <button id="slideDown">Slide Down All</button>
+                <button id="slideToggle">Slide Toggle All</button>
+            </div>
+        </section>
+
+        <!-- Task 5: Add and Remove Elements -->
+        <section id="skills" class="card">
+            <p class="eyebrow">ALWAYS LEARNING</p>
+            <h2>My Technical Skills</h2>
+
+            <ul id="skillList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+            </ul>
+
+            <input type="text" id="newSkill"
+                   placeholder="Enter a new skill">
+
+            <div class="button-group">
+                <button id="addSkill">Add Skill</button>
+                <button id="prependSkill">Prepend Skill</button>
+                <button id="removeSkill">Remove Skill</button>
+            </div>
+            <p id="skillError" class="error"></p>
+        </section>
+
+        <!-- Task 6: Attributes -->
+        <section class="card">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Find Me Online</h2>
+
+            <p>Click the button to change my social link.</p>
+
+            <a id="socialLink"
+               href="https://github.com"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit GitHub
+            </a>
+
+            <div class="button-group">
+                <button id="changeLink">Switch Social Link</button>
+            </div>
+        </section>
+
+        <!-- Task 7: Form Interaction -->
+        <section id="contact" class="card">
+            <p class="eyebrow">SAY HELLO</p>
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+                <label for="nameInput">Your Name</label>
+                <input type="text" id="nameInput"
+                       placeholder="Enter your name">
+
+                <label for="emailInput">Your Email</label>
+                <input type="email" id="emailInput"
+                       placeholder="Enter your email">
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="preview">
+                <h3>Live Preview</h3>
+                <p>Name: <span id="liveName">...</span></p>
+                <p>Email: <span id="liveEmail">...</span></p>
+            </div>
+        </section>
+
+        <!-- Task 8: Animations -->
+        <section class="card">
+            <p class="eyebrow">MY PROGRESS</p>
+            <h2>Skill Levels</h2>
+
+            <div class="skill">
+                <p>HTML — 90%</p>
+                <div class="bar-bg">
+                    <div class="bar" data-width="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>CSS — 80%</p>
+                <div class="bar-bg">
+                    <div class="bar" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>JavaScript — 65%</p>
+                <div class="bar-bg">
+                    <div class="bar" data-width="65%"></div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="animateSkills">Animate My Skills</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ♡ by Narges | 2026</p>
+    </footer>
+
+</body>
+</html>
